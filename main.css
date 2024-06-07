@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%; 1rem = 10px
+} */
+
+body {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+
+a,
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* header {
+  background-color: #d9d9d9;
+} */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header,
+footer {
+  padding: 1rem 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.products-container li {
+  flex-grow: 1;
+  padding: 1rem;
+  gap: 30px;
+  /* border: 1px solid black; */
+border-radius: 10px;
+background-color: #fff;
+}
+
+.products-container li:hover{
+    box-shadow: 0 0 40px  #ccc;
+}
+
+/* .products-container li > * {
+  margin-bottom: 1rem;
+} */
+
+.products-container li img {
+  height: 60%;
+}
+
+.products-container li h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+#app {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 4px solid blue;
+  border-top-color: transparent;
+  border-radius: 50%;
+
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  /* margin: 0 auto; */
+}
+
+.head {
+  height: 70px;
+  background-color: #454444;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  /* flex-wrap: wrap; */
+}
+
+.tel {
+  padding: 20px 95px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.tel p {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tel__img {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;/
+}
+
+.now{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.lang__loc{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+ul {
+  list-style-type: none;
+  gap: 20px;
+  cursor: pointer;
+}
+
+li{
+    font-size: 20px;
+    padding-top: 40px;
+    transition: 0.3s;
+}
+
+li:hover{
+    color: orangered;  
+}
+
+.list{
+font-size: 20px;
+    padding-top: 47px;
+    transition: 0.3s;
+}
+
+.list:hover{
+    color: orangered;
+}
+
+.logo__img{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.main-nav{  
+    display: flex;
+}
+
+form{
+    display: flex;
+}
+
+#form{
+    width: 200px;
+    height: 40px;
+    padding: 11px 9px;
+    margin-top: 40px;
+    margin-left: 60px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #D9D9D9;
+}
+
+.search{
+    margin-left: 10px;
+    margin-top: 47px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.cart__acc{
+    padding-top: 40px;
+    padding-left: 33px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.car{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.car:hover{
+    color: orangered;
+}
+
+.acc{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.acc:hover{
+    color: orangered;
+}
+
+
+
+body {
+    padding: 20px;
+  }
+  button {
+    width: 186px;
+    height: 68px;
+    border-radius: 50px;
+    border: 1px solid black;
+
+    margin-top: 20px;
+    line-height: 60px;
+    padding: 0 40px;
+    background: #fff;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: black;
+    color: #fff;
+  }
+
+  .shop{
+    width: 186px;
+    height: 68px;
+    border-radius: 50px;
+    border: 1px solid #454444;
+    margin-top: 20px;
+    line-height: 60px;
+    padding: 0 40px;
+    background-color: #454444;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+
+  .intro{
+    padding: 60px 77px ;
+    margin-top: 70px;
+    width: 1240px;
+    height: 344px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+  }
+
+  .lorem{
+    width: 100%;
+    max-width: 398px;
+  }
+
+  .more__btn{
+margin-top: 40px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .head__phone{
+    padding: 1px 21px;
+    width: 257px;
+    height: 68px;
+  }
+
+  .by{
+    margin-left: 20px;
+  }
