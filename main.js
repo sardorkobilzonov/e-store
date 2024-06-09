@@ -1,4 +1,17 @@
+import { checkToken, redirect } from "./utils.js";
+
 const container = document.querySelector(".products-container");
+
+// IIFE
+(async function () {
+  const products = await fetchProducts();
+  renderProducts(products);
+
+  const hasToken = checkToken();
+  if (hasToken == false) {
+    redirect("/login.html");
+  }
+})();
 
 async function fetchProducts() {
   container.insertAdjacentHTML("afterbegin", "<div class='spinner'></div>");
@@ -18,9 +31,13 @@ function renderProducts(products) {
     li.style.width = "230px";
     li.style.height = "500px";
 
+    const imgLink = document.createElement(`a`);
+    imgLink.href = `/product.html?id=${product.id} &title=${product.title}`;
     const img = document.createElement("img");
     img.src = product.image;
-    li.append(img);
+
+    imgLink.append(img);
+    li.append(imgLink);
 
     const title = document.createElement("h3");
     title.textContent = product.title;
@@ -54,9 +71,3 @@ function renderProducts(products) {
     container.append(li);
   });
 }
-
-// IIFE
-(async function () {
-  const products = await fetchProducts();
-  renderProducts(products);
-})();

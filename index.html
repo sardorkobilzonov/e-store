@@ -6,12 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <title>e-store</title>
     <link rel="stylesheet" href="./main.css" />
-    <script defer src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
   </head>
   <body>
     <div class="main-wrapper">
@@ -44,8 +44,10 @@
               </a>
               <li>Categories🔻</li>
               <li class="list">What’s new</li>
-              <li class="list">Sales</li>
               <li class="list">Help</li>
+              <li class="list">
+                <a class="login_link" href="./login.html">Login</a>
+              </li>
             </ul>
             <form>
               <input id="form" type="text" placeholder="Search Products" />
@@ -59,8 +61,13 @@
           <div class="intro">
             <div class="lorem">
               Lorem ipsum dolor sit amet, cons ecte tur adipiscing elit.
+              <button class="shop">Shop now</button>
             </div>
-            <button class="shop">Shop now</button>
+            <!-- <div class="login">
+              <a href="./login.html">
+                <button class="login__btn">Login</button>
+              </a>
+            </div> -->
           </div>
           <div class="more__btn">
             <button class="head__phone">Headphone Type🔻</button>

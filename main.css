@@ -10,7 +10,7 @@
 
 body {
   font-size: 1.6rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inter", sans-serif;
 }
 
 
@@ -42,6 +42,11 @@ footer {
 img {
   display: block;
   width: 100%;
+}
+
+input{
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .main-nav ul {
@@ -180,6 +185,17 @@ li{
 li:hover{
     color: orangered;  
 }
+.list a{
+  font-size: 25px;
+  padding-top: 40px;
+  transition: 0.3s;
+  color: black;
+  text-decoration: none;
+}
+
+.list a:hover{
+  color: orangered
+}
 
 .list{
 font-size: 20px;
@@ -294,6 +310,9 @@ body {
 
 
   .intro{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
     padding: 60px 77px ;
     margin-top: 70px;
     width: 1240px;
@@ -301,6 +320,23 @@ body {
     background-color: #D9D9D9;
     border-radius: 5px;
   }
+
+  .login__btn{
+    width: 186px;
+    height: 68px;
+    border-radius: 50px;
+    border: 1px solid #454444;
+    margin-top: 20px;
+    line-height: 60px;
+    padding: 0 40px;
+    background-color: #454444;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+
 
   .lorem{
     width: 100%;
@@ -322,3 +358,46 @@ margin-top: 40px;
   .by{
     margin-left: 20px;
   }
+
+
+.form__login{
+  display: block;
+}
+
+.form-control{
+  margin-bottom: 3rem;
+}
+
+.form__login{
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+}
+
+ label{
+margin-bottom: 0.8rem;
+}
+
+
+.form-control input{
+  border: none;
+  border-bottom: 2px solid;
+  padding: 0.5rem ;
+  width: 100%;
+}
+
+.form-control input:focus{
+  outline: none;
+  border-bottom-color: blue;
+}
+
+
+
+.login-button[disabled] {
+  pointer-events: none;
+}
+
+.product-container {
+  max-width: 500px;
+  margin: auto;
+}
