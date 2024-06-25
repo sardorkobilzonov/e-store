@@ -68,6 +68,13 @@ function renderProducts(products) {
     const btn = document.createElement("button");
     btn.textContent = "Add  to cart";
     li.append(btn);
-    container.append(li);
+
+    const button = document.createElement("button");
+    btn.textContent = "add";
+    li.append(button);
+
+    // const cart = document.createElement("div");
+    // cart.textContent = "cart";
+    // li.append(div);
   });
 }
